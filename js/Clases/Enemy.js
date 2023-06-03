@@ -26,7 +26,7 @@ class Enemy {
     this.velocity = {
       x: 0,
       y: 0,
-    };
+    };  
     this.speed = speed;
   }
 

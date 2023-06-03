@@ -69,7 +69,7 @@ let hearts = 10;
 let coins = 100;
 let gameOver = false; // Agrega una variable para controlar el estado del juego
 const explosions = [];
-let enemiesSpeed = 3;
+let enemiesSpeed = 1;
 
 spawnEnemies(enemyCount, enemiesSpeed);
 
@@ -119,7 +119,7 @@ function animate() {
   console.log("Num de enemigos " + enemies.length);
   if (enemies.length === 0) {
     enemyCount += 2;
-    enemiesSpeed = enemiesSpeed * 1.15;
+    enemiesSpeed = enemiesSpeed * 1.1;
     spawnEnemies(enemyCount, enemiesSpeed);
   }
 
